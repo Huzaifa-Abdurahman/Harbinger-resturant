@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-1 {
+            margin-top: 150px;
+            max-width: 600px;
+            padding-top: 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .notice {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .step {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .step span {
+            color: #777;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        select, input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h2 class="logo">HARBINGER</h2>
+        <ul class="nav-links">
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">More</button>
+                    <div class="dropdown-content">
+                        <a href="/menue.html">Menue</a>
+                        <a href="/drink.html">Drink</a>
+                        <a href="/special.html">Special</a>
+                    </div>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/happening.html">Happenings</a></li>
+                <li><a href="/index.html#reviews">reviews</a></li>
+                <li><a href="/index.html#reserve">reserve</a></li>
+                <li></li>
+                <li></li>
+            </ul>
+    </div>
+    <div class="container-1">
+        <h1>Reservation</h1>
+        <p class="notice">Thank you for your reservation request. Your request will be reviewed. Please allow 48 hours for a response. Please give us a call if your request is outside of this window. An email with confirmation or adjustments will follow.</p>
+        
+        <div class="step">
+            <div>Step 1: <span>Find a table</span></div>
+            <div>Step 2: <span>Add your details</span></div>
+        </div>
+
+        <form>
+            <label for="people">Number of People (required):</label>
+            <select id="people" required>
+                <option value="">Select...</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+            </select>
+
+            <label for="date">Select Date (required):</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Select Time (required):</label>
+            <select id="time" required>
+                <option value="">Select...</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="1:00">01:00 PM</option>
+                <option value="2:00">02:00 PM</option>
+                <option value="3:00">03:00 PM</option>
+                <option value="4:00">04:00 PM</option>
+            </select>
+
+            <button type="submit">Find a Table</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <!-- Contact Info Section -->
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p>1234 Restaurant St., City, Country</p>
+                    <p>Email: info@restaurant.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+    
+                <!-- Quick Links Section -->
+                <div class="footer-section quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Reservations</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media Section -->
+                <div class="footer-section social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Galaxy Software Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

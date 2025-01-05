@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harbinger Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Add a white overlay with transparency using linear-gradient */
+            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
+                        url('https://media.istockphoto.com/id/1227415751/photo/full-table-of-italian-meals-on-plates-pizza-pasta-ravioli-carpaccio-caprese-salad-and-tomato.jpg?s=612x612&w=0&k=20&c=0qCRhYGQw0w6ahhVX-4ezayA9r81A81cwbPDbgRlC5s=') 
+                        no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+        .menu-section {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.8);
+            margin: 20px auto;
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .menu-section p {
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        .menu {
+            display: inline-block;
+            width: 300px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .menu h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .menu-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .menu-item h4 {
+            font-size: 1em;
+            margin: 0 0 5px;
+        }
+
+        .menu-item span {
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        .menu-item .price {
+            font-weight: bold;
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h2 class="logo">HARBINGER</h2>
+        <ul class="nav-links">
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">More</button>
+                    <div class="dropdown-content">
+                        <a href="/menue.html">Menue</a>
+                        <a href="/drink.html">Drink</a>
+                        <a href="/special.html">Special</a>
+                    </div>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/happening.html">Happenings</a></li>
+                <li><a href="/index.html#reviews">reviews</a></li>
+                <li><a href="/index.html#reserve">reserve</a></li>
+                <li></li>
+                <li></li>
+            </ul>
+    </div>
+
+    <section class="menu-section">
+        <div class="menu-section">
+        <h2>OUR MENU</h2>
+        <p>During Restaurant Week (August 16th - 25th), we will only be serving our RW 2024 menu.</p>
+
+        <div class="menu">
+            <h3>Happy Hour Snacks</h3>
+            <div class="menu-item">
+                <h4>Lion's Mane Mushroom Yakitori</h4>
+                <span>Wild Mushroom Tare, Horseradish, Farm Leeks</span>
+                <div class="price">$8.00</div>
+            </div>
+            <div class="menu-item">
+                <h4>Milk Bread Toast</h4>
+                <span>Caramelized Leeks, Prosciutto XO, 5 Spice Pickled Apples</span>
+                <div class="price">$8.00</div>
+            </div>
+            <div class="menu-item">
+                <h4>Ginger Roasted Beet Gyoza</h4>
+                <span>Daikon Radish, Apple Soy Vinaigrette, Scallions</span>
+                <div class="price">$8.00</div>
+            </div>
+            <div class="menu-item">
+                <h4>Shishito Peppers Tempura Fried</h4>
+                <span>Tama Miso, Tomato Togarashi</span>
+                <div class="price">$8.00</div>
+            </div>
+            <div class="menu-item">
+                <h4>Steam Buns</h4>
+                <span>Pork Belly / Fried Chicken / Butternut Squash</span>
+                <div class="price">$3.00/1, $8.00/3</div>
+            </div>
+        </div></div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <!-- Contact Info Section -->
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p>1234 Restaurant St., City, Country</p>
+                    <p>Email: info@restaurant.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+    
+                <!-- Quick Links Section -->
+                <div class="footer-section quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Reservations</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media Section -->
+                <div class="footer-section social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Galaxy Software Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
